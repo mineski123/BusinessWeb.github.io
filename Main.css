@@ -1,0 +1,144 @@
+.section {
+    padding: 100px, 100x;
+
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #111111;
+}
+
+.home:before {
+    z-index: 777;
+    content: '';
+    position: absolute;
+    background: rgba(43, 38, 38, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.home .content {
+    z-index: 888;
+    color: rgb(255, 255, 255);
+    height: 70%;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+
+.home .content h1 {
+    font-size: 4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+}
+
+.home .content h1 span {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.home .content p {
+    margin-bottom: 65px;
+}
+
+.home .content a {
+    background: #ffffff;
+    padding: 15px 35px;
+    color: rgb(0, 0, 0);
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.home .media-icons {
+    z-index: 888;
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease;
+
+}
+
+.home .media-icons {
+    color: aliceblue;
+    font-size: 1.6em;
+}
+
+.home .media-icons a:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.home .media-icons a:hover {
+    transform: scale(1.3);
+}
+
+.home video {
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slider-navigation {
+    z-index: 888;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(80px);
+    margin-bottom: 12px;
+}
+
+.slider-navigation .nav-button {
+    width: 12px;
+    height: 12px;
+    background: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    transition: 0.3 ease;
+}
+
+.slider-navigation .nav-button.active {
+    background: #ff0000fa;
+
+
+}
+
+.slider-navigation .nav-button:not(:last-child) {
+    margin-right: 20px;
+}
+
+.slider-navigation .nav-button:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width:1040px){
+    header {
+        padding: 12px 20px;
+    }
+    
+    section {
+        padding: 100px 20px;
+    }
+    .home .media-icons {
+        right: 15px;
+    }
+
+    header.navigation {
+        display: none;
+    }
+}

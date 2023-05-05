@@ -1,0 +1,58 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: url(https://wallpapercave.com/wp/wp4486193.jpg) no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+
+.honeyglazed{
+  width: 1000px;
+  padding:0px;
+  background: #ff880198;
+  text-align: center;
+  margin: auto;
+  margin-top: 0%;
+  color: black;
+  font-family: "Poppins Bold";
+}
+.honeyglazed-img{
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+.honeyglazed h1{
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+.honeyglazed h4{
+  font-size: 25px;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+.creamygarlic{
+  width: 500px;
+  padding: 50px;
+  text-align: center;
+  margin: auto;
+  margin-top: 0%;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+.creamygarlic-img{
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+.creamygarlic h1{
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+.creamygarlic h4{
+  font-size: 25px;
+  letter-spacing: 3px;
+  font-weight: 100;
+}

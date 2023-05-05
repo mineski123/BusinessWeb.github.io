@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>
+		Wingman Homepage
+	</title>
+<link rel="stylesheet" href="Homestyle.css">
+<link rel="stylesheet" href="Main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<script src="https://kit.fontawesome.com/41ebb7a4fb.js" crossorigin="anonymous"></script>
+
+</head>
+<body>	
+	<div class="nav-bar">
+			<a href="#">Home</a>
+			<a href="products.html">Products</a>
+			<a href="about.html">About</a>
+			<a href="News.html">News</a>
+			<a href="Contacts.html">Contact</a>
+			
+	<div class="boxcontainer">
+			<form>
+			<input type="text" placeholder="Search" name="Search">
+				<button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+		
+			</form>
+			</table>
+		</div>
+				</div>
+				
+<section class="home">
+	<video class="video-slide" src="2.mp4" autoplay muted loop></video>
+
+
+	<div class="content">
+		<h3>Wingman's Special</h3>
+		<h1>Freshness <br><span>In Every Bite</h1></span>
+		<p> Chicken wings are best served as miniature legs and flats. The legs have big chunks of meat on them <br> so they are satisfying to everyone. 
+The flats are like the wing of the chicken that has a bone between the meat. <br> 
+Which is my favorite because I believe you could get the most flavor out of the bone</p>
+		<a href="#">Read More!</a>
+	
+	</div>
+
+	<div class="media-icons">
+		<a href="#"><i class="fa-brands fa-facebook"></i></a>
+		<a href="#"><i class="fa-brands fa-instagram"></i></a>
+		<a href="#"><i class="fa-brands fa-twitter"></i></a>
+	</div>
+	<div class="slider-navigation">
+		<div class="nav-button"></div>
+		<div class="nav-button"></div>
+		<div class="nav-button"></div>
+		<div class="nav-button"></div>
+		<div class="nav-button"></div> 
+	</div>
+</section> 
+
+	<script type="text/javascript">
+
+		const menuBtn = document.querySelector(".menu-btn");
+		const navigation = document.querySelector(".navigation");
+
+		menuBtn.addEventListener("click", () => {
+			menuBtn.classList.toggle("active");
+			navigation.classList.toggle("active");
+		});
+
+		const btns = document.querySelectorAll(".nav-button");
+
+		var sliderNav = function(manual){
+			btns[manual].classList.add("active");
+		}
+
+		btns.forEach((btns, i) => {
+			btn.addEventListener("click", () => {
+				sliderNav(i);
+			});
+		});
+
+		</script>
+
+</body>
+
+</html>
+</head>
